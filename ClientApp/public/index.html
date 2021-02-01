@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <base href="%PUBLIC_URL%/" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .Clour {
+            background-color:azure;
+            font-display:auto;
+            
+            
+        }
+        .FormHeader {
+            background-color: purple;
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            padding: 8px 0px;
+            border-radius: 14px 14px 0 0;
+            text-align: center;
+            /* margin-left: 14px;*/
+        }
+
+        .Front {
+            background-color: aqua;
+            padding: 8px 10px
+        }
+
+        .home{
+            background-color:aliceblue
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: #edbff5;
+        }
+
+        .themetable thead {
+            background: #fff;
+        }
+
+        table.themetable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .themetable thead tr th {
+            padding: 8px 10px;
+            color: #9c27b0;
+            text-align: left;
+            border: 1px solid #9c27b0 !important;
+        }
+
+            .themetable thead tr th:nth-child(1) {
+                border-radius: 25px 0px 0px 25px !important;
+            }
+
+            .themetable thead tr th:nth-last-child(1) {
+                border-radius: 0px 25px 25px 0px !important;
+            }
+
+        table.themetable, table.themetable thead, table.themetable thead tr {
+            border: 0px solid #9c27b0 !important;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .themetable tbody tr td {
+            border: 1px solid #9c27b0;
+            border-right: 1px solid #9c27b0;
+            padding: 8px 10px;
+        }
+
+        .themetable tbody tr:nth-child(odd) td {
+            background: #f2edf3;
+        }
+
+        .themetable tbody tr:nth-child(even) td {
+            background: #fff;
+        }
+
+        .tablebox {
+            width: 100%;
+            background: #fff;
+            padding: 10px 30px;
+            float: left;
+        }
+
+        .tableTittle {
+            color: #9c27b0;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+
+        .paginationwrap {
+            width: auto;
+            float: right;
+            padding-right: 0px;
+        }
+
+        .pagination {
+            display: inline-block;
+            padding-left: 0;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+            .pagination > li {
+                display: inline;
+            }
+
+                .pagination > li:first-child > a, .pagination > li:first-child > span {
+                    margin-left: 0;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+
+                .pagination > li > a, .pagination > li > span {
+                    position: relative;
+                    float: left;
+                    padding: 6px 12px;
+                    margin-left: -1px;
+                    line-height: 1.42857143;
+                    color: #337ab7;
+                    text-decoration: none;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                }
+
+                .pagination > li > a, .pagination > li > span {
+                    position: relative;
+                    float: left;
+                    padding: 6px 12px;
+                    margin-left: -1px;
+                    line-height: 1.42857143;
+                    color: #337ab7;
+                    text-decoration: none;
+                    background-color: #fff;
+                    border: 1px solid #9c27b0;
+                }
+
+        .tabletoolbar_master {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+            .tabletoolbar_master .tblbar_left {
+                width: 158px;
+                position: relative;
+                float: left;
+            }
+
+            .tabletoolbar_master .record_lbl {
+                position: absolute;
+                top: -1px;
+                left: 53px;
+            }
+
+            .tabletoolbar_master .select_record_page {
+                padding-left: 0px;
+            }
+
+            .tabletoolbar_master .form-group {
+                margin-bottom: 0px;
+                position: relative;
+
+
+            }
+
+            .tabletoolbar_master .select_record_page select {
+                color: #000;
+                width: 65px;
+                padding-left: 5px;
+            }
+
+            .tabletoolbar_master .record_lbl {
+                position: absolute;
+                top: 7px;
+                left: 74px;
+            }
+
+            .tabletoolbar_master .tblbar_right {
+                float: right;
+                padding-right: 0px;
+            }
+
+            .tabletoolbar_master .tblSearch {
+                width: 200px;
+            }
+
+            .tabletoolbar_master .tblbar_btn_group {
+                float: left;
+                padding-right: 10px;
+            }
+
+            .tabletoolbar_master .has-feedback .form-control {
+                padding-right: 0px;
+                float: right;
+            }
+
+            .tabletoolbar_master .form-control-feedback {
+                position: absolute;
+                top: 0% !important;
+                right: 0% !important;
+                z-index: 2;
+                display: block;
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                text-align: center;
+                pointer-events: none;
+            }
+
+            .tabletoolbar_master .tabletoolbar_master_recipe .tblSearch {
+                float: left;
+                position: relative;
+            }
+
+            .tabletoolbar_master input[type=text] {
+                background-color: #fff !important;
+                width: 100%;
+            }
+
+            .tabletoolbar_master .form-control {
+                border-radius: 0;
+                box-shadow: none;
+                height: 30px;
+                border-radius: 5px;
+                border-radius: 5px !important;
+                margin-bottom: 10px;
+                border: 1px solid #9c27b0;
+            }
+
+        /***  css for purpale theme **/
+        .purple .tabletoolbar_master .form-control {
+            border: 1px solid #9c27b0;
+        }
+
+        .pagination > li > a, .pagination > li > span {
+            color: #9c27b0;
+            border: 1px solid #9c27b0;
+        }
+
+        .AddUser {
+            clear: both;
+            overflow: hidden
+        }
+
+            .AddUser .is-invalid ~ .invalid-feedback {
+                position: absolute;
+            }
+
+            .AddUser div {
+                width: 50%;
+                float: left;
+                padding-left: 5px;
+                padding-right: 5px
+            }
+
+
+    </style>
+    <title>Sagar First_React_Crud</title>
+</head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
